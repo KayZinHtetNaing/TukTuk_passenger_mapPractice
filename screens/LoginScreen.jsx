@@ -28,10 +28,10 @@ export default function LoginScreen() {
     <View style={tw`flex-1 px-8 pt-8 mt-30 bg-white rounded-t-10`}>
         <View style={tw`form space-y-2`}>
             <Text style={tw`text-gray-700 ml-4 mb-3`}>Phone number</Text>
-            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5`} value="09423718445" placeholder="Enter Your Phone number"/>
+            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5`} placeholder="Enter Your Phone number"/>
 
             <Text style={tw`text-gray-700 ml-4 mb-3`}>Password</Text>
-            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-10`} secureTextEntry value="Susu12345" placeholder="Enter Your Password"/>
+            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-10`} secureTextEntry  placeholder="Enter Your Password"/>
             <TouchableOpacity style={tw`py-3 rounded-full bg-orange-400`} onPress={() =>navigation.navigate("Home")}>
               <Text style={tw`font-xl font-bold text-center text-white text-base`}>Login to Your Account</Text>
             </TouchableOpacity>
