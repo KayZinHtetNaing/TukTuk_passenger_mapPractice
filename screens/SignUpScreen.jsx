@@ -31,7 +31,7 @@ export default function SignupScreen() {
           <Text style={tw`text-gray-700 ml-4 mb-3`}>Name</Text>
           <TextInput
             style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5`}
-            value="Enter Your Name"
+            value=""
             placeholder="Enter Your Name"
           />
 
@@ -39,7 +39,7 @@ export default function SignupScreen() {
           <TextInput
             style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5`}
             secureTextEntry
-            value="Susu12345"
+            value=""
             placeholder="Enter Your Password"
           />
 
@@ -47,7 +47,7 @@ export default function SignupScreen() {
           <TextInput
             style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-10`}
             secureTextEntry
-            value="Susu12345"
+            value=""
             placeholder="Enter Your Confirm Password"
           />
 

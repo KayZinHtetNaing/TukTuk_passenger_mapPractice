@@ -27,11 +27,15 @@ export default function WelcomeScreen() {
                   <Text style={tw`text-white text-base font-normal tracking-wide`}>(Travel Service in Pyay)</Text>
                   
                   <View style={tw`my-30`}>
-                      <Text style={tw`text-white text-base font-thin tracking-wide text-center`}>Always ready to make your travel easy</Text>
+                      <Text style={tw`text-white text-base font-thin tracking-wide text-center`}>Always ready to make </Text>
+                      <Text style={tw`text-white text-base font-thin tracking-wide text-center`}>your travel easy</Text>
                   </View>
 
-                  <View style={{zindex:0}}>
-                    <TouchableOpacity style={tw`bg-orange-500 bg-opacity-100 mx-7 my-10 w-50 rounded-xl py-3 max-w-sm text-center font-bold`} onPress = {() => navigation.navigate('Login')}><Text>Let's Get Started</Text></TouchableOpacity>
+                  <View>
+                    <TouchableOpacity style={tw`bg-orange-500 bg-opacity-100 mx-7 my-10 w-50 rounded-xl py-3 max-w-sm text-center font-bold `} onPress = {() => navigation.navigate('Login')}>
+                    <Text style={tw`text-center`}>Let's Get Started</Text></TouchableOpacity>
+                   
+
                   </View> 
                 
                 </View>

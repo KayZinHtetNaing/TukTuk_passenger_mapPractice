@@ -13,7 +13,9 @@ import firebase from 'firebase/compat/app';
 
 const tukLogo=require("../assets/images/login.png")
 
-export default function InputPhScreen() {
+export default function InputPhScreen() { 
+    const navigation = useNavigation();
+
     const [phoneNumber , setPhoneNumber] = useState('');
     const [code, setCode] = useState('');
     const [verificationId , setVerificationId] = useState(null);
@@ -25,7 +27,7 @@ export default function InputPhScreen() {
         .then(setVerificationId);
         setPhoneNumber('');
     };
-    const OtpNoScreen = () => {navigation.navigate("OtpNoScreen")};
+    const signUp = () => {navigation.navigate("SignUp")};
     const confirmCode = () => {
         const credential = firebase.auth.PhoneAuthProvider.credential(
             verificationId,
@@ -38,24 +40,31 @@ export default function InputPhScreen() {
         .catch((error) =>{
             alert(error);
         })
- Alert.alert(
-                            'FingerPrint Authentication',
-                            'Would you like to authenticate using fingerprint ?',
-                            [
-                              {text: 'Cancel', onPress: () => console.log('Cancel Pressed!')},
-                              {text: 'Yes', onPress: this.onButtonPress},
-                            ],
-                            { cancelable: false }
-                          )
+
+    
+        const messageLines = [
+          'Line 1 of the message',
+          'Line 2 of the message',
+          'Line 3 of the message',
+        ];
+        
+        Alert.alert(
+          'Login Message',
+          messageLines.join('\n'), // Concatenate array elements into a single string
+          [
+            {
+              text: 'Ok',
+              onPress: signUp,
+            }
+          ]
+        )
 
 
-     onButtonPress = () => {
-        navigation.navigate("SignUpSreen")
-       }
+   
     } 
 
     
-  const navigation = useNavigation();
+ 
 
     return ( 
         
