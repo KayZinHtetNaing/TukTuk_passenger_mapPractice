@@ -8,7 +8,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import { FontAwesome } from '@expo/vector-icons';
 //import ImagePicker from 'react-native-image-crop-picker';
 
-const logoImg=require("../assets/images/bg.jpg")
+const logoImg=require("../assets/images/p10.png");
 
 const tukLogo=require("../assets/images/login.png")
 

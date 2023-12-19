@@ -23,7 +23,7 @@ import {
 } from '@react-navigation/drawer';
 //import { Image } from "react-native-svg";
 import tw from 'twrnc';
-const tukLogo=require("../assets/images/login.png")
+const tukLogo=require("../assets/images/p10.png")
 
 const Drawer = createDrawerNavigator();
 function HomeScreen() {
