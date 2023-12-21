@@ -35,7 +35,9 @@ export default function WelcomeScreen() {
                     <TouchableOpacity style={tw`bg-orange-500 bg-opacity-100 mx-7 my-10 w-50 rounded-xl py-3 max-w-sm text-center font-bold `} onPress = {() => navigation.navigate('Login')}>
                     <Text style={tw`text-center`}>Let's Get Started</Text></TouchableOpacity>
                    
-
+                  <View style={{zindex:0}}>
+                    <TouchableOpacity style={tw`bg-orange-500 bg-opacity-100 mx-7 my-10 w-50 rounded-xl py-3 max-w-sm text-center font-bold`} onPress = {() => navigation.navigate('Login')}>
+                    <Text style={tw`font-xl font-bold text-center text-white  text-base`}>Let's Get Started</Text></TouchableOpacity>
                   </View> 
                 
                 </View>
