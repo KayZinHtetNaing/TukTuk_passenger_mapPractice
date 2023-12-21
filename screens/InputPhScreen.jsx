@@ -75,12 +75,12 @@ export default function InputPhScreen() {
                             <ArrowLeftIcon size="20" color="white" />
                         </TouchableOpacity>
                     </View>
-                    <View style={tw`flex-1 justify-center items-center mt-15`}>
-                                <Image source={tukLogo} style={{width:150,height:150}}/>
+                    <View style={tw`flex-1 justify-center items-center mt-20`}>
+                                <Image source={tukLogo} style={{width:150,height:150,marginTop:50}}/>
                                 <Text style={tw`text-orange-400 font-bold text-4xl tracking-wide leading-normal`}>Tuk-Tuk </Text>
                     </View>
                 </SafeAreaView>
-                <View style={tw`flex-1 px-8 pt-8 mt-5 bg-white rounded-t-10 `}>
+                <View style={tw`flex-1 px-8 pt-8 mt-35 bg-white rounded-t-10 `}>
                     <View style={tw`form space-y-2`}>
 
                     <FirebaseRecaptchaVerifierModal
@@ -88,9 +88,9 @@ export default function InputPhScreen() {
             firebaseConfig={firebaseConfig}
         />
 
-                        <Text style={tw`text-gray-700 ml-4 mb-20 font-bold text-xl text-center`}>Enter Phone Number</Text>
+                        <Text style={tw`text-gray-700 ml-4 font-normal text-18px text-center`}>Enter Phone Number</Text>
                     
-                        <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5 text-center`} 
+                        <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mt-5 text-center`} 
                          
                          placeholder='Phone number with Country code'
                             onChangeText={setPhoneNumber}
@@ -99,11 +99,11 @@ export default function InputPhScreen() {
                          />
 
                         
-                        <TouchableOpacity style={tw`py-3 rounded-full bg-orange-400 mb-10`} onPress={sendVerification}>
+                        <TouchableOpacity style={tw`py-3 rounded-full bg-orange-400 mt-5 mb-10`} onPress={sendVerification}>
                         <Text style={tw`font-xl font-bold text-center text-white  text-base`}>Continue</Text>
                         </TouchableOpacity>
-
-                        <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-20 text-center`} 
+                        <Text style={tw`text-gray-700 ml-4 font-normal text-18px text-center`}>Enter Confirm code</Text>
+                        <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mt-5 mb-5 text-center`} 
                          
                         placeholder='Confirm Code'
                         onChangeText={setCode}

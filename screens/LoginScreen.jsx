@@ -20,7 +20,7 @@ export default function LoginScreen() {
                 <ArrowLeftIcon size="20" color="orange" />
             </TouchableOpacity>
         </View>
-        <View style={tw`flex-1 justify-center items-center`}>
+        <View style={tw`flex-1 justify-center items-center mt-20`}>
             <Image source={tukLogo} style={{width:150,height:150}}/>
             <Text style={tw`text-white font-bold text-4xl tracking-wide leading-normal`}>Tuk-Tuk </Text>
         </View>
@@ -33,10 +33,7 @@ export default function LoginScreen() {
 
             <Text style={tw`text-gray-700 ml-4 mb-3`}>Password</Text>
             <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-10`} secureTextEntry value="" placeholder="Enter Your Password"/>
-            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-5`} placeholder="Enter Your Phone number"/>
-
-            <Text style={tw`text-gray-700 ml-4 mb-3`}>Password</Text>
-            <TextInput style={tw`p-4 bg-gray-100 text-gray-700 rounded-2xl mb-10`} secureTextEntry  placeholder="Enter Your Password"/>
+            
             <TouchableOpacity style={tw`py-3 rounded-full bg-orange-400`} onPress={() =>navigation.navigate("Home")}>
               <Text style={tw`font-xl font-bold text-center text-white text-base`}>Login to Your Account</Text>
             </TouchableOpacity>
